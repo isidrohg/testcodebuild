@@ -6,6 +6,7 @@ phases:
       - pip install virtualenv
   pre_build:
     commands:
+      - echo $SHELL
       - mkdir venv
       - virtualenv --python=python2.7 venv/lambda
       - which python
